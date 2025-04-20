@@ -1,12 +1,169 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/mcc/ontologies/2025/3/untitled-ontology-34/"
-     xml:base="http://www.semanticweb.org/mcc/ontologies/2025/3/untitled-ontology-34/"
+<rdf:RDF xmlns="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject/"
+     xml:base="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/untitled-ontology-34"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#belongs_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#belongs_To">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#التخصص"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#canBe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#canBe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الأشخاص"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشرف"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#enrolledIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#enrolledIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الاسم"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#التخصص"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#السنة"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#العنوان"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملخص"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملف"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#supervises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#supervises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشرف"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#worked -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#worked">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الأشخاص -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الأشخاص">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#القسم"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الاسم -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الاسم"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#التخصص -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#التخصص"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#السنة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#السنة"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الطلاب">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الأشخاص"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#العنوان -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#العنوان"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#القسم -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#القسم">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشرف -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشرف">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الأشخاص"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#المشروع"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملخص -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملخص"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملف -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mcc/ontologies/2025/3/graduationProject#الملف"/>
 </rdf:RDF>
 
 
